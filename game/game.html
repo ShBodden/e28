@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <h1>Welcome to the arena of Rock Paper Scissors. Prepare for battle!</h1>
+    <h2>Computer's Weapon:</h2>
+    <p id="compselection1"></p> <br>
+    <h2>Pick your weapon wisely...</h2>
+
+
+    <form>
+        <select id="userweapon">
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+        </select>
+
+    </form><br>
+
+    <h2>You have choosen to wield</h2>
+    <p id="y"></p>
+
+    <br> <button onclick="verdict()">FIGHT</button><br><br>
+    <h1 id="winner"></h1>
+
+    <Script>
+        // build array of weapons
+        var weapons = ["rock", "paper", "scissors"];
+
+        // main function that will provide the logic for the game
+        function verdict() {
+            //declare varibales  
+
+            // this variable will store the result of the game algorithm
+            var verdict1;
+
+            // x will represent the users weapons 
+            var x = document.getElementById("userweapon").value;
+
+            // randomize and automate the computer's weapon   
+            var compweapon = weapons[Math.floor(3 * Math.random())]
+            console.log(compweapon);
+
+            // once button is clicked, the weapon will be assigned to the x variable and displayed
+            document.getElementById("y").innerHTML = x;
+
+            //handles all tie situations
+            if (x == compweapon) {
+                verdict1 = "Tie!";
+            }
+            //let's deal with rock selection
+            else if (x == "rock" && compweapon == "paper") {
+                verdict1 = "YOU LOSE! Your rock has been engulfed and suffocated by the power of paper.";
+            }
+            else if (x == "rock" && compweapon == "scissors") {
+                verdict1 = "YOU WIN!";
+            }
+            //let's deal with paper selection
+            else if (x == "paper" && compweapon == "rock") {
+                verdict1 = "YOU WIN!";
+            }
+            else if (x == "paper" && compweapon == "scissors") {
+                verdict1 = "YOU LOSE! You have been shredded by scissors";
+                //let's deal with scissors selection 
+            }
+            else if (x == "scissors" && compweapon == "rock") {
+                verdict1 = "YOU LOSE! Your scissors are sharp no more; crumbled into pieces under the weight of the rock";
+            }
+            else if (x == "scissors" && compweapon == "paper") {
+                verdict1 = "YOU WIN!";
+            }
+            //assign verdict to html id
+            document.getElementById("winner").innerHTML = verdict1;
+
+            //aaign computer's weapon to html id
+            document.getElementById("compselection1").innerHTML = compweapon;
+
+        }
+
+    </Script>
+</body>
+
+</html>
