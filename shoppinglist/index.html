@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>Shopping List</title>
+    <meta charset='utf-8'>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <style>
+        [v-cloak] {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Shopping List</h1>
+
+
+    <div id='app' v-cloak>
+        {{cars[1].make}} {{cars[1].model}}
+        <br>
+        {{cars[0].make}} {{cars[0].model}} {{cars.length}}
+        <br>
+        {{cars[2].make + ''}} {{cars[2].model}} is a {{cars[2].type}}
+
+        <div>
+            <h2>Item: <input type="text" v-model="item"> <button @click="shoppingList = true; additem()">Add</button>
+            </h2>
+        </div>
+        <div v-if='!shoppingList'>
+            <h2>You have no items on your list</h2>
+        </div>
+
+        <div v-if='shoppingList'>
+
+
+            <h2>Item count: {{list.length}}</h2>
+            <div>
+                <ul>
+                    <li v-for='thisitem in list'>{{thisitem}}</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
