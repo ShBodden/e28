@@ -1,40 +1,44 @@
 
 <template>
   <div id="establishment-page">
-    <h1>Under Construction</h1>
-    
+    <h1>{{this.establishment.name}}</h1>
+   <h2> {{ this.establishment.address }} </h2>
+    <div><img class="establishment-thumb" :src='imageSrc' /></div>
+<br>
+     {{this.establishment.review}} - {{this.establishment.reviewer}}
   </div>
 </template>
 
 <script>
-
-import * as app from '@/common/app.js'
+import * as app from "@/common/app.js";
 export default {
   name: "establishmentPage",
+  props: ["slug"],
 
-  components: {
-  
-  },
-  
- 
- 
+  components: {},
 
- data: function() {
+  data: function() {
     return {
-     
-
+      establishment: null
     };
-
-    
-    
   },
 
-mounted:
+  mounted: function() {
+    app.api.find("establishments", "slug", this.slug).then(response => {
+      this.establishment = response;
+    });
+  },
 
-function(){
-    app.api.get('establishments', 'slug', 'legal-sea-foods')
+   computed: {
+    imageSrc: function() {
+      try {
+          return require("@/assets/images/establishments/" + this.establishment.slug + ".jpg")
+      }
+      catch (e) {
+          return require("@/assets/images/establishments/image-not-available.jpg")
+      }
+      
     }
-
-
+  }
 };
 </script>
