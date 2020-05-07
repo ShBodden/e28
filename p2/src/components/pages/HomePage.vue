@@ -1,7 +1,7 @@
 
 <template>
     <div>
-        <p>Welcome to P2 reviews. Where people like you share their experiences with businesses in your city.</p>
+        <h2>Welcome to P2 reviews. Where people like you share their experiences with businesses in your city.</h2>
 
        
     </div>
