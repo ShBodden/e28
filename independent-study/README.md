@@ -1,4 +1,4 @@
-# Code style - comments, syntax, organization, best practices, etc.
+# Code style
 ## Introduction
 Code styles are the rules and conventions developers follow in order to facilitate better collaboration. Following these conventions makes code easier for others to read and understand by setting standards and expectations. Ideally, a project with multiple contributors will appear as though it were written by one developer. If a developer happens to leave a team, a new hire should be able to jump right in, read the code without a problem, and contribute seamlessly. Conversely, the departing team member won't be leaving with any information that remaining team members aren't able to decipher by simply reading the code. This particular consideration is increasingly important given the projected growth within the software development field. The United States Bureau of Labor Statistics projects that the field will grow by 21 percent through 2028. Meaning more and more developers will be working together on projects small and large. 
 
