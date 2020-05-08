@@ -21,7 +21,7 @@ In the below examples, both will work in terms of html that will render on the s
 
 Code styles generally should have no impact on the functionality or performance of the code itself, however proper formatting also ensures that the code will be able to properly interact with other technologies as well as future versions as best as possible. 
 
-In the following example taken from the Vue.js style guide, developers are asked to always name custom components using multiple words separated by a hyphen. While using a single word or words that are not separated by a hyphen may work, doing so assures that the component name won't conflict with HTML elements that either exist now or that could exist in the future. 
+In the following example taken from the [Vue.js style guide](https://vuejs.org/v2/style-guide/), developers are asked to always name custom components using multiple words separated by a hyphen. While using a single word or words that are not separated by a hyphen may work, doing so assures that the component name won't conflict with HTML elements that either exist now or that could exist in the future. 
 
 ![future proof](https://github.com/ShBodden/e28/blob/master/independent-study/images/future-proof.png)
 
@@ -38,12 +38,13 @@ The debate was famously settled by [Richard Hendricks](https://www.youtube.com/w
 
 In conclusion, formatting code according to a particular style guide will improve its subjective appearance but will also ensure it is compatible with features specific to the language it is written in as well as other languages that are likely to work in conjunction with the code. A more in-depth look at style guides goes beyond the basics of indentation, casing, and white space, but also into the use of tools specific to a given language. As the field of software development grows, so will the need to have a consistent set of rules. It is widely believed that in the future, a growing number of professionals in the workforce who aren't software developers, will need to have a basic understanding of how to read code and perform basic tasks using computer languages. Making a consensus in style increasingly important. 
 
-
-
-
-
-
-
+### Resources
+- [Bureau of Labor Statistics, U.S. Department of Labor, Occupational Outlook Handbook](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm#tab-6)
+- ["Zen and the Art of Motorcycle Maintenance"](https://www.amazon.com/Zen-Art-Motorcycle-Maintenance-Inquiry/dp/0060589469) by Robert Pirsig
+- [Google Style Guides.](http://google.github.io/styleguide/)
+- [w2schools.com HTML Style Guide](https://www.w3schools.com/html/html5_syntax.asp)
+- ["The Elements of Programming Style"](https://www.amazon.com/Elements-Programming-Style-2nd/dp/0070342075) by Brian W. Kernighan and P. J. Plauger
+- [Vue.js style guide](https://vuejs.org/v2/style-guide/)
 
 
 
