@@ -1,8 +1,8 @@
 # Code style - comments, syntax, organization, best practices, etc.
 ## Introduction
-Code styles are the rules and conventions developers follow in order to facilitate better collaboration. Following conventions makes code easier for others to read and understand by setting standards and expectations. Ideally, a project with multiple contributors will appear as though it were written by one developer. If a developer happens to leave a team, a new hire should be able to jump right in, read the code without a problem, and contribute seemlessly. 
+Code styles are the rules and conventions developers follow in order to facilitate better collaboration. Following these conventions makes code easier for others to read and understand by setting standards and expectations. Ideally, a project with multiple contributors will appear as though it were written by one developer. If a developer happens to leave a team, a new hire should be able to jump right in, read the code without a problem, and contribute seemlessly. Conversely, the departing team member won't be leaving with any information that remaining team members aren't able to decipher by simply reading the code. This particular consideration is increasingly important given the projected growth within the software development field. The United States Bureau of Labor Statistics projects that the field will by 21 percent through 2028. Meaning 
 
-![labor stats](https://github.com/ShBodden/e28/tree/master/independent-study/images/labor-stats.jpg)
+![labor stats](https://github.com/ShBodden/e28/blob/master/independent-study/images/labor-stats.png)
 
 In the below examples, both will work. The first however, is a bit easier on the eyes and clearer to understand without the unnessary spaces. It helps the reader easily identify chunks of code that work together. Multiplied by dozens or hundreds of lines of code, it makes a big difference. 
 ```html
