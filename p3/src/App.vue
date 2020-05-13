@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="p2 logo" src="./assets/images/p2logo.png" />
+    <img alt="p3 logo" src="./assets/images/p3logo.png" />
 
     <nav>
       <ul>
