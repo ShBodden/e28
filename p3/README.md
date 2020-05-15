@@ -10,3 +10,4 @@
 
 ## Notes for instructor
 Thank you for a great semester given the extra challenges we all faced. 
+I posted a question regarding testing but didn't hear back in time so I commented out the code. I didn't have time to make it dynamic. 
