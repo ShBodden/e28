@@ -3,9 +3,9 @@
 
 
   <div class="establishment">
-    <div class="establishment-name">{{ establishment.name }}</div>
+    <div data-test='establishment-name' class="establishment-name">{{ establishment.name }}</div>
     <router-link :to='{ name: "establishment", params: {slug: establishment.slug}}'>
-    <img class="establishment-thumb" :src='imageSrc' /></router-link>
+    <img data-test='establishment-pic' class="establishment-thumb" :src='imageSrc' /></router-link>
     <p class="establishment-description">{{ establishment.description }}</p>
     <br>
     <p> {{ establishment.review }} <br> - {{ establishment.reviewer }}</p>

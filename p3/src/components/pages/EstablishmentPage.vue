@@ -1,7 +1,7 @@
 
 <template>
   <div id="establishment-page" v-if='establishment'>
-    <h1>{{establishment.name}}</h1>
+    <h1 data-test='establishment-name'>{{establishment.name}}</h1>
     <h2>{{ this.establishment.address }}</h2>
     <div>
       <img class="establishment-thumb" :src="imageSrc" />
